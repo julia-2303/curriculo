@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quem sou Eu</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      /* RESET */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* CONFIGURAÇÃO GLOBAL */
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #722F37;
+        color:white;
+        line-height: 1.6;
+        padding: 30px;
+        transition: 0.4s;
+      }
+
+      /* CONTAINER */
+
+      .container {
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      /* CABEÇALHO */
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        color: white;
+        border-bottom: 4px solid #006400;
+        padding-bottom: 6px;
+        display: inline-block;
+      }
+
+      header h2 {
+        font-size: 1rem;
+        font-weight: normal;
+        margin-top: 10px;
+        color:red;
+      }
+
+      /* AVATAR */
+
+      .avatar {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid #006400;
+      }
+
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* TEXTO */
+
+      main p {
+        text-align: justify;
+        margin-bottom: 20px;
+        font-size: 1.05rem;
+      }
+
+      /* HABILIDADES */
+
+      .habilidades {
+        margin-top: 20px;
+      }
+
+      .habilidades ul {
+        padding-left: 20px;
+      }
+
+      /* BOTÕES */
+
+      .btn-area {
+        margin-top: 30px;
+      }
+
+      /* BOTÃO CURRÍCULO */
+
+      .btn-cv {
+        background: black;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        transition: 0.3s;
+      }
+
+      .btn-cv:hover {
+        background:#006400;
+        color: black;
+      }
+
+      /* BOTÃO IMPRIMIR */
+
+      .btn-print {
+        background: black;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-right: 10px;
+        transition: 0.3s;
+        border: none;
+        cursor: pointer;
+      }
+
+      .btn-print:hover {
+        background: #006400;
+        color: black;
+      }
+
+      /* BOTÃO DARK MODE */
+
+      .btn-theme {
+        background:#006400;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn-theme:hover {
+        opacity: 0.8;
+      }
+
+      /* RODAPÉ */
+
+      .social-footer {
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 2px solid #ddd;
+        text-align: center;
+      }
+
+      .social-footer a {
+        margin: 0 15px;
+        font-size: 28px;
+        color: w;
+        transition: 0.3s;
+      }
+
+      .social-footer a:hover {
+        color: #006400;
+        transform: scale(1.2);
+      }
+
+      /* CONTATO PARA IMPRESSÃO */
+
+      .contato-print {
+        display: none;
+        margin-top: 30px;
+      }
+
+      /* DARK MODE */
+
+      .dark-mode {
+        background:black;
+        color: #eee;
+      }
+
+      .dark-mode header h1 {
+        color: white;
+      }
+
+      .dark-mode .social-footer a {
+        color: white;
+      }
+
+      /* RESPONSIVO */
+
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .avatar {
+          margin-top: 20px;
+        }
+      }
+
+      /* IMPRESSÃO */
+
+      @media print {
+        .btn-area {
+          display: none;
+        }
+
+        .social-footer {
+          display: none;
+        }
+
+        .contato-print {
+          display: block;
+        }
+
+        body {
+          margin: 0;
+        }
+
+        .container {
+          max-width: 800px;
+          margin: auto;
+        }
+
+        p {
+          font-size: 12pt;
+          line-height: 1.4;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          <h1>Julia Silva Moura</h1>
+
+          <h2>Desenvolvimento de sistemas • Back end</h2>
+        </div>
+
+        <div  class="avatar">
+          <img src="images.jpg" alt="Avatar" />
+        </div>
+      </header>
+
+      <main>
+        <p>
+          Estudante ingressante em Desenvolvimento de Sistemas, em busca da
+          minha primeira oportunidade profissional. Meu foco atual é construir
+          uma base sólida em lógica de programação e entender como a tecnologia
+          pode ser usada para resolver problemas do dia a dia, dedicando-me ao
+          aprendizado das principais ferramentas e linguagens do mercado.
+        </p>
+
+        <p>
+          Tenho especial interesse em entender o funcionamento dos sistemas
+          digitais e como a organização de dados pode facilitar a vida das
+          pessoas. Atuo através de estudos constantes e pesquisas práticas,
+          buscando transformar a teoria da sala de aula em competências técnicas
+          reais e processos mais eficientes.
+        </p>
+
+        <p>
+          Entre meus interesses estão a leitura e a música, atividades que
+          utilizo para exercitar minha disciplina, foco e clareza de
+          comunicação. Busco integrar esse repertório pessoal ao aprendizado
+          tecnológico para crescer profissionalmente, contribuindo com
+          proatividade em equipes que valorizem a inovação e o compartilhamento
+          de conhecimento.
+        </p>
+
+        <div class="habilidades">
+          <h3>Principais habilidades</h3>
+
+          <ul>
+            <li>adaptalidade e flexibilidade</li>
+            <li>inteligência emocional</li>
+            <li>Comunicação eficaz e trabalho em equipe</li>
+            <li>Resolução de problemas e pensamento crítico</li>
+          </ul>
+        </div>
+
+        <!-- BOTÕES -->
+
+        <div class="btn-area">
+          <button onclick="window.print()" class="btn-print">
+            <i class="fa-solid fa-print"></i> Imprimir Currículo
+          </button>
+
+          <button onclick="toggleTheme()" class="btn-theme">
+            <i class="fa-solid fa-moon"></i> Dark Mode
+          </button>
+        </div>
+
+        <!-- CONTATO PARA IMPRESSÃO -->
+
+        <section class="contato-print">
+          <h3>Contato</h3>
+
+          <p>
+            Email: juliamoura2303@gmail.com<br />
+            WhatsApp: +55 11 96342-3971<br />
+            GitHub: github.com/julia-2303<br />
+          </p>
+        </section>
+      </main>
+
+      <footer class="social-footer">
+        <a href="https://wa.me/5511963423971" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="mailto:juliamoura2303@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <a href="https://github.com/julia-2303" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </footer>
+    </div>
+
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>
